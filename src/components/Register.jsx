@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css';
 import { auth, db } from '../firebaseConfig'; // Firebase config
+<<<<<<< HEAD
 import { createUserWithEmailAndPassword } from 'firebase/auth'; // Firebase methods
 import { setDoc, doc } from 'firebase/firestore'; // Firestore methods
 import { Timestamp } from 'firebase/firestore'; // For registrationDate
+=======
+import { createUserWithEmailAndPassword } from 'firebase/auth'; // Firestore methods
+import { setDoc, doc } from 'firebase/firestore';
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -12,12 +17,17 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('user');
   const [error, setError] = useState(null);
+<<<<<<< HEAD
   const [popUpVisible, setPopUpVisible] = useState(false);
+=======
+  const [popUpvisible,setPopUpVisible] = useState(false)
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
   
   const handleRegister = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+<<<<<<< HEAD
 
       // Create or update user document in Firestore with UID as the document ID
       await setDoc(doc(db, 'users', user.email), {
@@ -39,12 +49,28 @@ const Register = () => {
       setError(error.message);
     }
   };
+=======
+  
+      // Create or update user document in Firestore with UID as the document ID
+      await setDoc(doc(db, 'users', user.uid), {
+        email: user.email,
+        username: username,
+        role: role
+      });
+      setPopUpVisible(true);
+    } catch (error) {
+      console.error('Registration error:', error.message);
+    }
+  };
+  
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
 
   return (
     <div className="register-container">
       <div className="register-card">
         <h2 className="register-title">Registration Form</h2>
         {error && <p className="error-text">{error}</p>}
+<<<<<<< HEAD
         {popUpVisible && <p className="success-text">User Registered successfully</p>}
         <div className="input-container">
           <input
@@ -73,6 +99,34 @@ const Register = () => {
             <option value="admin">Admin</option>
           </select>
         </div>
+=======
+        {popUpvisible && <p className='success-text'>User Registered successfully</p>}
+        <input
+          type="email"
+          className="input-field"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="text"
+          className="input-field"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          className="input-field"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <select className="input-field" value={role} onChange={(e) => setRole(e.target.value)}>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
         <button className="register-btn" onClick={handleRegister}>
           Register
         </button>

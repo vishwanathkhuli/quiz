@@ -10,7 +10,10 @@ import Register from './components/Register';
 import AdminDashboard from './components/AdminDashboard';
 import UserDashboard from './components/UserDashboard';
 import Navbar from './components/Navbar'; // Import the Navbar component
+<<<<<<< HEAD
 import LeaderBoard from './components/LeaderBoard'
+=======
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
 
 function App() {
   const questions = JSON.parse(localStorage.getItem('questions'));
@@ -44,7 +47,11 @@ function App() {
               <>
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/create" element={<QuizCreation />} />
+<<<<<<< HEAD
                 <Route path='/leaderboard' element={<LeaderBoard/>} />
+=======
+                <Route path="/results" element={<QuizResults />} />
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
               </>
             ) : (
               <>

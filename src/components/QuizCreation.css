@@ -91,15 +91,25 @@
   }
   
   /* Action buttons for edit and delete */
+<<<<<<< HEAD
   .action-btn {
     display: flex;
     gap: 10px;
     padding: 10px;
+=======
+  .question-actions {
+    display: flex;
+    gap: 10px;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     margin-top: 10px;
   }
   
   /* Edit button */
+<<<<<<< HEAD
   .edit-btn {
+=======
+  .edit-button {
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     padding: 5px 10px;
     background-color: #28a745;
     color: white;
@@ -108,22 +118,37 @@
     cursor: pointer;
   }
   
+<<<<<<< HEAD
   .edit-btn:hover {
+=======
+  .edit-button:hover {
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     background-color: #218838;
   }
   
   /* Delete button */
+<<<<<<< HEAD
   .delete-btn {
     padding: 5px 10px;
     background-color: #c72939;
+=======
+  .delete-button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
   }
   
+<<<<<<< HEAD
   .delete-btn:hover {
     background-color: #9d0514;
+=======
+  .delete-button:hover {
+    background-color: #c82333;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
   }
   
   /* Media query for smaller screens to stack elements */

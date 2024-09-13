@@ -126,9 +126,15 @@ const QuizCreation = () => {
                 </li>
               ))}
             </ul>
+<<<<<<< HEAD
             <div className="action-btn">
               <button className='edit-btn' onClick={() => handleEditQuestion(q.id)}>Edit</button>
               <button className='delete-btn' onClick={() => handleDeleteQuestion(q.id)}>Delete</button>
+=======
+            <div className="question-actions">
+              <button onClick={() => handleEditQuestion(q.id)}>Edit</button>
+              <button onClick={() => handleDeleteQuestion(q.id)}>Delete</button>
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
             </div>
           </li>
         ))}

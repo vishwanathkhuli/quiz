@@ -10,8 +10,12 @@
   }
   
   .login-card {
+<<<<<<< HEAD
     width: 100%;
     background-color: #e0cec2a8;
+=======
+    background-color: #F5E9E4;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

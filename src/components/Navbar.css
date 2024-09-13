@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 /* General Navbar Styling */
 .navbar {
     /* width: 100%; */
     display: flex;
     justify-content: space-around;
+=======
+/* Navbar.css */
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     align-items: center;
     background-color: #333; /* Dark background */
     padding: 15px 30px; /* Add some padding */
@@ -17,13 +26,21 @@
   }
   /* Logo on the left */
   .navbar-left {
+<<<<<<< HEAD
     font-size: 1.5rem; /* Large logo text */
+=======
+    font-size: 24px; /* Large logo text */
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     font-weight: bold;
   }
   
   /* Links on the right */
   .navbar-right a,
+<<<<<<< HEAD
   .navbar-right .nav-btn {
+=======
+  .navbar-right button {
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
     margin-left: 20px; /* Spacing between links */
     color: white; /* White text */
     text-decoration: none; /* No underline */
@@ -37,6 +54,7 @@
     border-radius: 5px; /* Rounded edges on hover */
   }
 
+<<<<<<< HEAD
   .nav-btn{
     background-color:transparent;
   }
@@ -60,3 +78,30 @@
     text-align: end;
   }
 }  
+=======
+  #logout{
+    background-color:transparent;
+  }
+  #logout:hover{
+    background-color: #c62222 !important;
+    border-radius: 5px; /* Rounded edges on hover */
+  }
+  /* Mobile responsive design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack the navbar vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px; /* Add spacing between logo and links */
+    }
+  
+    .navbar-right a,
+    .navbar-right button {
+      margin-left: 0; /* Remove left margin on mobile */
+      padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+  }
+  
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2

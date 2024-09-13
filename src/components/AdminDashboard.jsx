@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';  
 import { useNavigate } from 'react-router-dom';  
 import './AdminDashboard.css';   
@@ -56,3 +57,41 @@ const AdminDashboard = () => {
 };  
 
 export default AdminDashboard;
+=======
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './AdminDashboard.css'; // Importing the CSS
+
+const AdminDashboard = () => {
+  const navigate = useNavigate(); // useNavigate hook for navigation
+
+  const handleTakeQuiz = () => {
+    navigate('/take'); // Navigate to the quiz-taking page
+  };
+
+  const handleViewResults = () => {
+    navigate('/results'); // Navigate to the quiz results page
+  };
+  
+  const handleCreateQuiz = () => {
+    navigate('/create');
+  };
+
+  return (
+    <div className="dashboard-container">
+      <h1 className="dashboard-title">Admin Dashboard</h1>
+      <p className="dashboard-subtitle">A modern and clean Admin Dashboard</p>
+      <div className="dashboard-buttons">
+        <button className="dashboard-button" onClick={handleCreateQuiz}>
+          Add Questions
+        </button>
+        <button className="dashboard-button" onClick={handleViewResults}>
+          View User Details
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default AdminDashboard;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2

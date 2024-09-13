@@ -18,9 +18,16 @@ const Login = ({ setUser }) => {
       const user = userCredential.user; // Firebase Authentication user object
   
       // Step 2: Fetch additional user details from Firestore
+<<<<<<< HEAD
       const userDoc = await getDoc(doc(db, 'users', user.email));
       if (userDoc.exists()) {
         const userData = userDoc.data();
+=======
+      const userDoc = await getDoc(doc(db, 'users', user.uid));
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        console.log(userData)
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
         setUser(userData); // Set user data in state
         localStorage.setItem('loggedInUser', JSON.stringify(userData)); // Save logged-in user
         navigate(userData.role === 'admin' ? '/admin' : '/user'); // Redirect based on role
@@ -39,7 +46,10 @@ const Login = ({ setUser }) => {
       <div className="login-card">
         <h2 className="login-title">Login</h2>
         {error && <p className="error-text">{error}</p>}
+<<<<<<< HEAD
         <div className="input-container">
+=======
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
         <input
           type="email"
           className="input-field"
@@ -54,7 +64,10 @@ const Login = ({ setUser }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
         <button className="login-btn" onClick={handleLogin}>
           Login
         </button>

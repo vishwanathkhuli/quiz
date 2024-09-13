@@ -17,7 +17,11 @@
 }
 
 .toggle-button {
+<<<<<<< HEAD
   background-color: #0069d9;
+=======
+  background-color: #3f51b5;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
   color: white;
   padding: 10px;
   border: none;
@@ -49,7 +53,11 @@
 }
 
 .question-nav-button.active {
+<<<<<<< HEAD
   background-color: #0069d9;
+=======
+  background-color: #3f51b5;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
   color: white;
 }
 
@@ -89,7 +97,11 @@
 
 .timer {
   font-size: 1.2rem;
+<<<<<<< HEAD
   color: #0069d9;
+=======
+  color: #3f51b5;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
 }
 
 .question-container {
@@ -152,7 +164,11 @@
 .prev-button,
 .next-button,
 .submit-button {
+<<<<<<< HEAD
   background-color: #0069d9;
+=======
+  background-color: #3f51b5;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
   color: white;
   padding: 10px 20px;
   border: none;
@@ -161,10 +177,16 @@
   transition: background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 .prev-button:hover,
 .next-button:hover,
 .submit-button:hover {
   background-color: #004997;
+=======
+.next-button:hover,
+.submit-button:hover {
+  background-color: #303f9f;
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
 }
 
 /* Quiz start button */
@@ -186,6 +208,7 @@
 .start-button:hover {
   background-color: #388e3c;
 }
+<<<<<<< HEAD
 
 
 /* AdminDashboard.css */
@@ -240,3 +263,5 @@
   border-bottom: 1px solid #ddd;
   text-align: left;
 }
+=======
+>>>>>>> 2ea07870b338e365a7a6a5df93480f70d20fcae2
