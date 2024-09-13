@@ -1,0 +1,190 @@
+/* Background and container styling */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('../data/background.jpg');
+    background-size: cover; 
+  }
+  
+  .register-card {
+    width: 100%;
+    background-color: #e0cec2a8;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Form title */
+  .register-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .error-text{
+    color: #dc3545;
+  }
+
+  .success-text{
+    color: #28a745;
+  }
+  .input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 96%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #999;
+  }
+  
+  /* Register button styling */
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #7B979B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-btn:hover,.login-btn:hover {
+    background-color: #507478;
+  }
+  
+  /* Login section styling */
+  .register-link-text {
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #7B979B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-link {
+    color: #7B979B;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Small screens (phones) */  
+@media (max-width: 576px) {  
+  .register-container {  
+    height: 100vh;  
+    background-size: cover;  
+    background-position: center;  
+  }  
+  .register-card {  
+    padding: 1rem;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    max-width: 300px;  
+    text-align: center;  
+  }  
+  .input-field {  
+    padding: 0.5rem;  
+    margin: 0.5rem;  
+    border-radius: 5px;  
+  }  
+  .register-btn, .login-btn {  
+    padding: 0.5rem;  
+    margin-top: 1rem;  
+    font-size: 14px;  
+  }  
+  .register-link-text {  
+    font-size: 14px;  
+  }  
+}  
+
+/* Medium screens (tablets) */  
+@media (min-width: 577px) and (max-width: 992px) {  
+  .register-container {  
+    height: 100vh;  
+    background-size: cover;  
+    background-position: center;  
+  }  
+  .register-card {  
+    padding: 1.5rem;  
+    border-radius: 15px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    max-width: 400px;  
+    text-align: center;  
+  }  
+  .input-field {  
+    padding: 0.75rem;  
+    margin: 0.75rem;  
+    border-radius: 7.5px;  
+  }  
+  .register-btn, .login-btn {  
+    padding: 0.75rem;  
+    margin-top: 1.5rem;  
+    font-size: 16px;  
+  }  
+  .register-link-text {  
+    font-size: 16px;  
+  }  
+}  
+
+/* Large screens (laptops) */  
+@media (min-width: 993px) and (max-width: 1200px) {  
+  .register-container {  
+    height: 100vh;  
+    background-size: cover;  
+    background-position: center;  
+  }  
+  .register-card {  
+    padding: 2rem;  
+    border-radius: 20px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    max-width: 500px;  
+    text-align: center;  
+  }  
+  .input-field {  
+    padding: 1rem;  
+    margin: 1rem;  
+    border-radius: 10px;  
+  }  
+  .register-btn, .login-btn {  
+    padding: 1rem;  
+    margin-top: 2rem;  
+    font-size: 18px;  
+  }  
+  .register-link-text {  
+    font-size: 18px;  
+  }  
+}  
